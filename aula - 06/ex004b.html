@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos Fixed, Replace e LocaleString</title>
+</head>
+<body>
+    
+    <script>
+        let salario = prompt('Salário do funcionário X: ');
+        let formatacao01 = Number(salario).toFixed(2);
+        let formatacao02 = Number(salario).toFixed(2).replace('.',',');
+        let formatacao03 = Number(salario)
+            .toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+        document.write(salario);
+        document.write(`<p>${formatacao01}</p>`);
+        document.write(`<p>${formatacao02}</p>`);
+        document.write(`<p>${formatacao03}</p>`);
+    </script>
+</body>
+</html>

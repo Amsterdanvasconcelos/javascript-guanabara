@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(29, 29, 96);
+            color: white;
+            font: normal 20px Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado...</p>
+    <p>Apredendo a manipular o <strong>DOM</strong> com <span 
+        style="color: yellow; text-shadow: 0 0 5px black;">JavaScript</span>.</p>
+    <div id="div">Click em mim!</div>
+    <script>
+        const title = window.document.getElementsByClassName('title')[0]
+        const p1 = window.document.getElementsByTagName('p')[0];
+        const p2 = window.document.getElementsByTagName('p')[1];
+        const div = window.document.getElementById('div');
+        const p1Text = p1.innerText;
+        const p2Text = p2.innerText;
+        title.style.backgroundColor = 'red';
+        window.document.write(`<p>No parágrafo 01, temos este texto: ${p1Text}</p>`);
+        window.document.write(`<p>No parágrafo 02, temos este texto: ${p2Text}</p>`);
+        div.innerHTML = '<p>Aguardando...</p>';
+    </script>
+</body>
+</html>

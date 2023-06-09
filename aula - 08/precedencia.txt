@@ -1,0 +1,4 @@
+01 - Aritiméticos;
+02 - Relacionais;
+03 - Lógicos 
+    ! > && > ||;
