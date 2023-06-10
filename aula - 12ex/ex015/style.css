@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(26, 143, 189);
+    font: normal 20px Arial, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.436);
+    margin: 0 auto;
+    background-color: white;
+    width: 500px;
+}
+
+div {
+    padding: 10px 0;
+}
+
+input[type=button] {
+    border-radius: 3px;
+    margin-top: 15px;
+    height: 40px;
+    width: 100px;
+    font: normal 18px Arial;
+}
+
+#saida {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
