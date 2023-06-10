@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(26, 143, 189);
+    font: normal 20px Arial, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.354);
+}
+
+section {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.326);
+    margin: 0 auto;
+    background-color: white;
+    width: 500px;
+}
+
+div {
+    text-align: center;
+}
+
+div > p {
+    color: rgb(42, 42, 42);
+    font-weight: 600;
+}
+
+div > img {
+    padding: 15px;
+    width: 350px;
+}
+
+footer {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
