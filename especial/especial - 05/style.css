@@ -14,7 +14,26 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.436);
     margin: 0 auto;
     background-color: white;
-    width: 500px;
+    width: 600px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#saida {
+    padding: 0 20px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+#saida p {
+    margin: 7px 0;
+}
+
+option {
+    font-size: 18px;
 }
 
 footer {
