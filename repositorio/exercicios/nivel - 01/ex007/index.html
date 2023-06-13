@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+        button {
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Média do aluno v1.0</h1>
+    <button>Calcular média</button>
+    <div>
+        <p>O resultado vai aparecer aqui...</p>
+    </div>
+
+    <script>
+        const button = document.querySelector('button');
+        button.addEventListener('click', () => {
+            const saida = document.querySelector('div');
+            const nome = prompt('Qual é o nome do aluno?');
+            const notaPrimeira = prompt(`Qual foi a primeira nota de ${nome}?`);
+            const notaUltima = prompt(
+                `Além de ${notaPrimeira}, qual foi a outra nota de ${nome}?`);
+            const media = (Number(notaPrimeira) + Number(notaUltima)) / 2;
+            saida.innerHTML = `<p>Calculando a média final de <mark>${nome}</mark>.</p>`;
+            saida.innerHTML += 
+                `<p>As notas obtidas foram <mark>${notaPrimeira}</mark> e <mark>${notaUltima}</mark>.</p>`;
+            saida.innerHTML += `<p>A média final será <mark>${media}</mark>.</p>`;
+        });
+    </script>
+</body>
+</html>

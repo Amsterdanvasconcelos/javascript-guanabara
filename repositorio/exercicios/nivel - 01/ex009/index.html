@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+        button {
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+    <button id="contar">Clique em mim</button>
+    <button id="zerar">Zerar o contador</button>
+    <div>
+        <p>
+            O contador está com 
+            <strong style="background-color: bisque; padding: 0 3px; border-radius: 5px;">0</strong>
+            cliques.
+        </p>
+    </div>
+
+    <script>
+        const btnContar = document.querySelector('#contar');
+        const btnZerar = document.querySelector('#zerar');
+        const saida = document.querySelector('strong');
+        let contador = 0;
+
+        function contar() {
+            contador += 1;
+            saida.innerText = contador;
+        }
+
+        function zerar() {
+            contador = 0;
+            saida.innerText = contador;
+        }
+
+        btnContar.addEventListener('click', contar);
+        btnZerar.addEventListener('click', zerar);
+    </script>
+</body>
+</html>

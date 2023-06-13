@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+        button {
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button>Clique para calcular</button>
+    <div>
+        <p>O resultado vai aparecer aqui...</p>
+    </div>
+
+    <script>
+        const button = document.querySelector('button');
+        
+        button.addEventListener('click', () => {
+            const saida = document.querySelector('div');
+            const number = Number(prompt('Digite um número:'));
+
+            saida.innerHTML = 
+                `<p>O número a ser analisado aqui será o <strong>${number}</strong></p>`;
+            saida.innerHTML += 
+                `<p>O seu valor absoluto é ${Math.abs(number)}</p>`;
+            saida.innerHTML += 
+                `<p>A sua parte inteira é ${Math.trunc(number)}</p>`;
+            saida.innerHTML += 
+                `<p>O valor inteiro mais próximo é ${Math.round(number)}</p>`;
+            saida.innerHTML += 
+                `<p>A sua raiz quadrada é ${Math.sqrt(number).toFixed(2)}</p>`;
+            saida.innerHTML += 
+                `<p>A sua raiz cúbica é ${Math.cbrt(number).toFixed(2)}</p>`;
+            saida.innerHTML += 
+                `O valor de ${number}<sup>2</sup> é ${Math.pow(number, 2).toFixed(2)}`;
+            saida.innerHTML += 
+                `<p>O valor de ${number}<sup>3</sup> é ${Math.pow(number, 3).toFixed(2)}</p>`;
+        });
+    </script>
+</body>
+</html>

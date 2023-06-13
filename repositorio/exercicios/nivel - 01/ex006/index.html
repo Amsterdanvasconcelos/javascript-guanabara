@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+        button {
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <button>Iniciar a soma!</button>
+    <div>
+        <p>O resultado vem aqui...</p>
+    </div>
+
+    <script>
+        const button = document.querySelector('button');
+        button.addEventListener('click', () => {
+            const saida = document.querySelector('div');
+            const numb01 = prompt('Digite um número:');
+            const numb02 = prompt('Digite outro número:');
+            const soma = Number(numb01) + Number(numb02);
+            saida.innerHTML = 
+                `<p>
+                    A soma entre <mark>${numb01}</mark> e <mark>${numb02}</mark>
+                     é igual a <strong>${soma}</strong>!
+                </p>`;
+        });
+    </script>
+</body>
+</html>
