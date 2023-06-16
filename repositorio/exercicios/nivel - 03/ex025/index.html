@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando de 0 até um número positivo qualquer</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+        input[type=number] {
+            font-size: 20px;
+        }
+        button {
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contando de 0 até um número positivo qualquer</h1>
+
+    <p>Escolha o limite final para a contagem a partir do 0 (digite apenas números postivos)</p>
+
+    <label for="numb">Valor final:</label> 
+    <input type="number" id="numb" placeholder="Apenas postivos">
+    <button>Contar</button>
+    
+    <p>Preencha os dados acima e aperte o botão.</p>
+    <p data-saida="saida"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
