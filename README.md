@@ -52,3 +52,9 @@ files:
           ex027 - Tabuada.
           ex028 - Fatorial.
     youtube:
+      especial:
+        especial-01 - Hora do dia.
+        especial-02 - Verficador de idade.
+        especial-03 - Contador inteligente.
+        especial-04 - Tabuada.
+        especial-05 - Analisador de números.
